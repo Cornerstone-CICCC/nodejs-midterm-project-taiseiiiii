@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii -type d -not -path */.*)",
+      "Bash(grep -v \"^\\\\.\\\\.$|^\\\\.\\\\.$\")",
+      "Bash(find /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii -type f \\\\\\(-name *.js -o -name *.ts -o -name *.json -o -name *.ejs -o -name *.html \\\\\\))",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm create:*)",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/signup -H \"Content-Type: application/json\" -d '{\"\"username\"\":\"\"test\"\",\"\"email\"\":\"\"test@test.com\"\",\"\"password\"\":\"\"MyStr0ng!Pass99\"\"}')",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/signup -H \"Content-Type: application/json\" -d '{\"\"username\"\":\"\"test\"\",\"\"email\"\":\"\"test@test.com\"\",\"\"password\"\":\"\"MyStr0ngPass99\"\"}')",
+      "Bash(pkill -f \"tsx watch src/server.ts\")",
+      "Bash(git -C /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii log --oneline -10)",
+      "Bash(git -C /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii log --all --oneline)",
+      "Bash(git -C /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii show 53b3bba)",
+      "Bash(git -C /Users/taisei/ciccc/assignments/nodejs-midterm-project-taiseiiiii log --all --pretty=format:\"%H %ai %s\")"
+    ]
+  }
+}

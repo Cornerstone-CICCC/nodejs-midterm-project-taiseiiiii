@@ -1,0 +1,240 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navbar-user {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Auth Pages */
+.auth-page {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 32px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.auth-page h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.auth-page p {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.auth-form button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Error */
+.error-message {
+  background: #fde8e8;
+  color: var(--danger);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+/* Password Strength */
+.password-strength {
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
+.strength-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.strength-fill {
+  height: 100%;
+  transition: width 0.3s, background-color 0.3s;
+  border-radius: 3px;
+}
+.strength-warning {
+  font-size: 0.8rem;
+  color: var(--danger);
+  margin-top: 4px;
+}
+
+/* Page Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.page-header h1 {
+  margin: 0;
+}
+
+/* Search */
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+.search-form input {
+  width: 250px;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.recipe-card:hover {
+  transform: translateY(-2px);
+}
+.recipe-card h3 {
+  margin-bottom: 8px;
+}
+.recipe-card h3 a {
+  color: var(--text);
+}
+.recipe-card h3 a:hover {
+  color: var(--primary);
+}
+.recipe-description {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.recipe-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Recipe Detail */
+.recipe-detail {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.recipe-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.recipe-detail h1 {
+  margin: 0;
+}
+.recipe-actions {
+  display: flex;
+  gap: 8px;
+}
+.recipe-info {
+  color: var(--text-light);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+.recipe-section {
+  margin-bottom: 24px;
+}
+.recipe-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+.recipe-section ul,
+.recipe-section ol {
+  padding-left: 24px;
+}
+.recipe-section li {
+  margin-bottom: 6px;
+}
+
+/* Recipe Form */
+.recipe-form-page {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.recipe-form-page h1 {
+  margin-bottom: 24px;
+}
+.dynamic-field {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.dynamic-field input {
+  flex: 1;
+}
+.btn-remove {
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  width: 36px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Empty & Loading */
+.empty-message {
+  text-align: center;
+  color: var(--text-light);
+  padding: 48px 0;
+  font-size: 1.1rem;
+}
+.loading {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--text-light);
+}
